@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simulation Quiz by Hong Vo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+
+<body onload="renderQuestion()">
+  
+<div class="container">
+  <h1>My Simulation Quiz</h1>  
+  
+  <h2 id="test_status"></h2>
+  <div id="test"></div>
+
+  <div class="alert alert-success" id= "alert-success" style="display:none">
+    <strong>Your answer is correct!</strong>
+  </div>
+  <div class="alert alert-warning" id= "alert-warning" style="display:none">
+    <strong>You didn't provide an answer.</strong> 
+  </div>
+  <div class="alert alert-danger" id= "alert-danger" style="display:none">
+    <strong>Your answer is incorrect.</strong> 
+  </div>
+</div>
+</body>
+</html>
